@@ -17,10 +17,10 @@ function textOverAct(text) {
   if (!text || typeof text !== "string") throw new Error();
 
   const arrayOfChars = text.split("");
-  const key = Object.keys(uniqChar);
+  //   const key = Object.keys(uniqChar);
 
   arrayOfChars.forEach((char, index) => {
-    if (key.includes(char)) {
+    if (uniqChar.hasOwnProperty(char)) {
       arrayOfChars[index] = uniqChar[char];
     }
   });
