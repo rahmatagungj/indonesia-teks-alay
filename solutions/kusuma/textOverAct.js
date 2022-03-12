@@ -17,7 +17,6 @@ function textOverAct(text) {
   if (!text || typeof text !== "string") throw new Error();
 
   const arrayOfChars = text.split("");
-  //   const key = Object.keys(uniqChar);
 
   arrayOfChars.forEach((char, index) => {
     if (uniqChar.hasOwnProperty(char)) {
